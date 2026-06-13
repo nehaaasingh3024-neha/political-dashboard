@@ -22,6 +22,9 @@ df.columns = df.columns.str.strip()
 # -------------------------------
 
 st.title("Political Intelligence Dashboard")
+st.caption(
+    "Developed by Neha Singh | Political Intelligence Dashboard | 2026"
+)
 
 if st.button("🔄 Fetch Latest News"):
     import os
@@ -193,4 +196,14 @@ summary = (
 st.dataframe(
     summary,
     use_container_width=True
+)
+
+st.markdown("---")
+st.caption(
+    "Political Intelligence Dashboard Prototype | Developed by Neha Singh © 2026"
+)
+
+st.sidebar.markdown("---")
+st.sidebar.caption(
+    "Developed by Neha Singh"
 )
